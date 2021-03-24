@@ -1,27 +1,46 @@
+import { Button, Logo, Subtitle, Title } from '..';
+import img from '../../img/employees.jpg';
+
 const Header = () => (
-  <header>
-    <nav>
-      <a href='#'>Features</a>
-      <a href='#'>Pricing</a>
-      <a href='#'>Blog</a>
-      <a href='#'>About us</a>
-    </nav>
-    <div>
-      <button>Sign in</button>
-      <button>Sign up</button>
+  <header className='pt-5'>
+    <div className='flex justify-between items-center text-lg mb-20'>
+      <Logo />
+      <ul className='flex list-none text-gray-300'>
+        <li className='px-3 py-5 '>
+          <a href='#'>Features</a>
+        </li>
+        <li className='px-3 py-5 '>
+          <a href='#'>Pricing</a>
+        </li>
+        <li className='px-3 py-5 '>
+          <a href='#'>Blog</a>
+        </li>
+        <li className='px-3 py-5 '>
+          <a href='#'>About us</a>
+        </li>
+      </ul>
+      <div className='flex'>
+        <Button
+          text='Sign in'
+          classes='mr-2'
+          color='text-indigo-500'
+          bg='bg-transparent'
+        />
+        <Button text='Sign up' />
+      </div>
     </div>
     <div>
-      <h1>Landing template for startups</h1>
-      <p>
-        Out landing page template works on all devices, so you only have to set
-        it up once, and get beautiful results forever
-      </p>
-      <div>
-        <button>Start free trial</button>
-        <button>Learn more</button>
+      <Title text='Landing template for startups' />
+      <Subtitle
+        text='Out landing page template works on all devices, so you only have to set
+        it up once, and get beautiful results forever'
+      />
+      <div className='flex justify-center my-8'>
+        <Button text='Start free trial' classes='mr-4' />
+        <Button text='Learn more' bg='bg-gray-700' />
       </div>
-      <div>
-        <img src='' alt='Video' />
+      <div className='mt-20 mb-28'>
+        <img src={img} alt='Video employees' className='w-full h-full' />
       </div>
     </div>
   </header>

@@ -1,38 +1,13 @@
+import { Features, Footer, Header } from '.';
+
 function App() {
   return (
-    <div className='container mx-auto'>
-      <section className=''>
-        <h1>Built exclusively for you</h1>
-        <p>
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-          officia deserunt mollit laborum — semper quis lectus nulla.
-        </p>
-        <div>
-          <div>
-            <img src='' alt='feature icon' />
-            <h2>1. Acquisition</h2>
-            <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur.
-            </p>
-          </div>
-          <div>
-            <img src='' alt='feature icon' />
-            <h2>1. Acquisition</h2>
-            <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur.
-            </p>
-          </div>
-          <div>
-            <img src='' alt='feature icon' />
-            <h2>1. Acquisition</h2>
-            <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur.
-            </p>
-          </div>
-        </div>
+    <div className='container mx-auto px-5 font-sans bg-black text-white'>
+      <Header />
+      <Features />
+      <Footer />
+      {/* <section className=''>
+        <div></div>
       </section>
       <section className=''>
         <div>
@@ -101,7 +76,7 @@ function App() {
           </div>
           <div></div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
