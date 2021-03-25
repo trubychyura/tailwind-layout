@@ -1,11 +1,14 @@
-import { Features, Footer, Header } from '.';
+import { Benefits, Features, Footer, Header } from '.';
 
 function App() {
   return (
-    <div className='container mx-auto px-5 font-sans bg-black text-white'>
+    <div className='container mx-auto px-5 font-sans  text-white'>
       <Header />
+      <Benefits />
       <Features />
+
       <Footer />
+      {/*  */}
       {/* <section className=''>
         <div></div>
       </section>
