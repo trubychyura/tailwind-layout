@@ -5,7 +5,7 @@ const Header = () => (
   <header className='pt-5'>
     <div className='flex justify-between items-center text-lg mb-20'>
       <Logo />
-      <ul className='flex list-none text-gray-300'>
+      <ul className='list-none text-secondary hidden md:flex'>
         <li className='px-3 py-5 '>
           <a href='#'>Features</a>
         </li>
@@ -19,15 +19,16 @@ const Header = () => (
           <a href='#'>About us</a>
         </li>
       </ul>
-      <div className='flex'>
+      <div className='hidden md:flex'>
         <Button
           text='Sign in'
           classes='mr-2'
-          color='text-indigo-500'
+          color='text-secondary-dark'
           bg='bg-transparent'
         />
         <Button text='Sign up' />
       </div>
+      <div className='md:hidden w-7 h-1 bg-white hamburger'></div>
     </div>
     <div>
       <Title text='Landing template for startups' />
@@ -35,8 +36,8 @@ const Header = () => (
         text='Out landing page template works on all devices, so you only have to set
         it up once, and get beautiful results forever'
       />
-      <div className='flex justify-center my-8'>
-        <Button text='Start free trial' classes='mr-4' />
+      <div className='grid grid-flow-row md:grid-flow-col md:grid-col-2 gap-5  max-w-xs md:maw-w-full mx-auto mt-10'>
+        <Button text='Start free trial' />
         <Button text='Learn more' bg='bg-gray-700' />
       </div>
       <div className='mt-20 mb-28'>

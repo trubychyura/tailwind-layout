@@ -1,0 +1,48 @@
+.benefits-list__item {
+  @apply px-5;
+  display: inline-block;
+  position: relative;
+}
+.benefits-list__item::before {
+  display: block;
+  content: url(../img/check.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+}
+
+.person-name::before {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  content: '';
+  width: 15px;
+  height: 2px;
+  @apply bg-gray-50;
+}
+
+.hamburger {
+  position: relative;
+}
+
+.hamburger::after,
+.hamburger::before {
+  @apply w-7;
+  @apply h-1;
+  @apply bg-white;
+  position: absolute;
+  display: block;
+  content: '';
+  left: 0;
+}
+
+.hamburger::before {
+  top: -10px;
+}
+
+.hamburger::after {
+  top: 10px;
+}

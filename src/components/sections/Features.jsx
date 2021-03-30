@@ -10,52 +10,52 @@ const Features = () => (
       text='Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
       deserunt mollit laborum — semper quis lectus nulla.'
     />
-    <div className='text-xl text-center grid grid-flow-row grid-cols-3 gap-4 mt-20 mb-48'>
+    <div className='text-xl text-center grid grid-flow-row max-w-sm md:max-w-full md:grid-cols-3 gap-10 md:gap-4 mt-20 mb-20 md:mb-48 mx-auto'>
       <div>
-        <div className='inline-block bg-indigo-500 w-20 h-20 rounded-full relative'>
+        <div className='inline-block bg-primary w-20 h-20 rounded-full relative'>
           <img
             src={acquisition}
             alt='feature icon'
             className='absolute top-1/2 left-1/2 transform -translate-x-2/4 -translate-y-2/4 '
           />
         </div>
-        <h2 className='text-2xl font-bold text-gray-200 my-2'>
-          <span className='text-gray-400'>1</span>. Acquisition
+        <h2 className='text-2xl font-bold  my-2'>
+          1<span className='text-secondary'>. Acquisition</span>
         </h2>
-        <p className='text-gray-400'>
+        <p>
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
           dolore eu fugiat nulla pariatur.
         </p>
       </div>
       <div>
-        <div className='inline-block bg-indigo-500 w-20 h-20 rounded-full relative'>
+        <div className='inline-block bg-primary w-20 h-20 rounded-full relative'>
           <img
             src={activation}
             alt='feature icon'
             className='absolute top-1/2 left-1/2 transform -translate-x-2/4 -translate-y-2/4 '
           />
         </div>
-        <h2 className='text-2xl font-bold text-gray-200 my-2'>
-          <span className='text-gray-400'>2</span>. Acquisition
+        <h2 className='text-2xl font-bold  my-2'>
+          2<span className='text-secondary'>. Acquisition</span>
         </h2>
-        <p className='text-gray-400'>
+        <p>
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
           dolore eu fugiat nulla pariatur.
         </p>
       </div>
 
       <div>
-        <div className='inline-block bg-indigo-500 w-20 h-20 rounded-full relative'>
+        <div className='inline-block bg-primary w-20 h-20 rounded-full relative'>
           <img
             src={retention}
             alt='feature icon'
             className='absolute top-1/2 left-1/2 transform -translate-x-2/4 -translate-y-2/4 '
           />
         </div>
-        <h2 className='text-2xl font-bold text-gray-200 my-2'>
-          <span className='text-gray-400'>3</span>. Acquisition
+        <h2 className='text-2xl font-bold my-2'>
+          3. <span className='text-secondary'>Acquisition</span>
         </h2>
-        <p className='text-gray-400'>
+        <p>
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
           dolore eu fugiat nulla pariatur.
         </p>
